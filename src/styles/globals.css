@@ -1,0 +1,84 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+@import "slick-carousel/slick/slick.css";
+@import "slick-carousel/slick/slick-theme.css";
+
+html {
+  font-family: "Roboto", sans-serif;
+}
+
+img {
+  display: block;
+}
+input[type="text"],
+input[type="password"],
+input[type="email"],
+input[type="number"],
+input[type="url"],
+input[type="date"],
+input[type="datetime-local"],
+input[type="month"],
+input[type="week"],
+input[type="time"],
+input[type="search"],
+input[type="tel"],
+input[type="radio"],
+input[type="file"],
+select[multiple],
+select {
+  @apply focus:border-primary focus:ring-primary;
+}
+
+textarea {
+  @apply rounded-lg  h-40 focus:border-primary focus:ring-primary;
+}
+input[type="checkbox"] {
+  @apply h-5 w-5 rounded-md;
+}
+/* .StepButton-d2-0-2-8.active {
+  background-color: #113f57 !important;
+} */
+.react-tabs__tab--selected {
+  color: #113f57 !important;
+}
+/* .specialOffer {
+  position: sticky;
+  top: 10px;
+} */
+.heroImages {
+  width: 85%;
+  min-width: 150px;
+  display: block;
+}
+
+.sellerImage {
+  width: 70%;
+  height: 120px;
+  object-fit: contain;
+}
+.slick-prev {
+  left: 3% !important;
+  z-index: 1;
+  background-color: black;
+  color: white;
+}
+.slick-next {
+  right: 3% !important;
+  z-index: 1;
+  background-color: black;
+  color: white;
+}
+.tabs {
+  max-width: 90%;
+  margin: auto;
+}
+.slick-prev {
+  background-color: black;
+}
+
+.te {
+  color: #113f57;
+}
