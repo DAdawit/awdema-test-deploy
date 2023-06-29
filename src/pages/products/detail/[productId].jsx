@@ -17,13 +17,14 @@ import Spinner from "@/Icons/Spinner";
 import { showToast } from "@/components/showToast ";
 import IconWishlist from "@/Icons/IconWishList";
 import { ADDTO_WISHLIST } from "@/graphql";
-import ReportProduct from "@/components/products/reportProduct";
+// import ReportProduct from "@/components/products/reportProduct";
 import ProductImages from "@/components/products/ProductImages";
 import Head from "next/head";
 import { useEffect } from "react";
 import { useQuery } from "@apollo/client";
 import context from "../../../../context";
 import CustomLoading from "@/components/customLoading";
+import ReportProductDialog from "@/components/products/ReportProduct";
 const ProductDetail = ({ relatedItems, images }) => {
   const router = useRouter();
   const { productId } = router.query;
@@ -221,7 +222,7 @@ const ProductDetail = ({ relatedItems, images }) => {
           {/* </div> */}
         </section>
         <div className="pl-10">
-          <ReportProduct productId={data?.productById?.id} />
+          <ReportProductDialog productId={data?.productById?.id} />
         </div>
       </div>
       <SellerInfo

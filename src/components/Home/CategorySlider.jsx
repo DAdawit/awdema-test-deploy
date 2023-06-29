@@ -24,6 +24,7 @@ export default class CenterMode extends Component {
               >
                 <div className="overflow-hidden">
                   <div className="relative">
+                    {/* eslint-disable-next-line */}
                     <img
                       src={`https://awdma.afroel.com/media/${category.image}`}
                       alt="category image"

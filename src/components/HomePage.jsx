@@ -9,7 +9,7 @@ import FeaturedAndTopRatedProducts from "./Home/FeaturedAndTopRatedProducts";
 import BecomeDeliverer from "./Home/BecomeDeliverer";
 import { useState } from "react";
 import Hero from "./Hero";
-import Services from "./Home/services";
+// import Services from "./Home/services";
 import { Tab, TabList, TabPanel } from "react-tabs";
 import Box from "@mui/material/Box";
 import TabContext from "@mui/lab/TabContext";
